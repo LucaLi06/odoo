@@ -6,6 +6,14 @@
     'version': '1.0',
     'depends': ['website'],
     'data': ['views/header.xml',],
+    'assets':{
+        'web.assets_frontend': [
+            'theme_yourhome2/static/src/scss/styles.scss'
+        ],
+        'web._assets_primary_variables': [
+            "theme_yourhome2/static/src/scss/primary_variables.scss",
+        ]
+    },
     'images': [
     ],
     'snippet_lists': {
