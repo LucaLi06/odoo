@@ -5,7 +5,8 @@
     'sequence': 10,
     'version': '1.0',
     'depends': ['website'],
-    'data': ['views/header.xml',],
+    'data': ['views/header.xml',
+             'views/footer.xml',],
     'assets':{
         'web.assets_frontend': [
             'theme_yourhome2/static/src/scss/styles.scss'
