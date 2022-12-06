@@ -6,7 +6,8 @@
     'version': '1.0',
     'depends': ['website'],
     'data': ['views/header.xml',
-             'views/footer.xml',],
+             'views/footer.xml',
+             'views/homepage.xml'],
     'assets':{
         'web.assets_frontend': [
             'theme_yourhome2/static/src/scss/styles.scss'
