@@ -7,7 +7,9 @@
     'depends': ['website'],
     'data': ['views/header.xml',
              'views/footer.xml',
-             'views/homepage.xml'],
+             'views/homepage.xml',
+             'views/services_page.xml',
+             'views/menus.xml'],
     'assets':{
         'web.assets_frontend': [
             'theme_yourhome2/static/src/scss/styles.scss'
