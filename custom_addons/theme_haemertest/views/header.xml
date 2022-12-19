@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="custom_header" inherit_id="website.layout" name="Custom Header">
+        <xpath expr="//header" position="replace">
+            <header>
+                <div class="d-flex justify-content-center">
+                    <a class="navbar-brand" href="#">
+                        <img style="height:80px; widht:auto;" src="/theme_haemertest/static/src/img/haemerslogo.png"/>
+                    </a>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+                    <div class="container">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link font-weight-medium" href="http://localhost:8015
+                                        ">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        COMMITED TEAM
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Our History</a>
+                                        <a class="dropdown-item" href="#">Our Values</a>
+                                        <a class="dropdown-item" href="#">Our Team</a>
+                                        <a class="dropdown-item" href="#">Our Partners</a>
+                                        <a class="dropdown-item" href="#">Career</a>
+
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-medium" href="http://localhost:8015/blog">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-medium" href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-medium" href="#">Contacts</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </nav>
+            </header>
+        </xpath>
+    </template>
+</odoo>
