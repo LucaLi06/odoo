@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="custom_footer" inherit_id="website.layout" name="Custom Footer">
+        <xpath expr="//footer" position="replace">
+            <footer>
+                <div class="container py-5 border-top" id="footer">
+                    <div class="coryright">
+                        © Copyright 2017. All Rights Reserved.
+                    </div>
+                </div>
+            </footer>
+        </xpath>
+    </template>
+</odoo>

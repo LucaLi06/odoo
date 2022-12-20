@@ -7,6 +7,7 @@
     'depends': ['website'],
     'data': [
         'views/header.xml',
+        'views/footer.xml',
     ],
     'assets':{
             'web.assets_frontend': [
