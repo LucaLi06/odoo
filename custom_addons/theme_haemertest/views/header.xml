@@ -20,68 +20,12 @@
                         <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
 
-                                <li class="nav-item active">
-                                    <a class="nav-link font-weight-medium" href="http://localhost:8015
-                                        ">Home</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        COMMITED TEAM
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Our History</a>
-                                        <a class="dropdown-item" href="#">Our Values</a>
-                                        <a class="dropdown-item" href="#">Our Team</a>
-                                        <a class="dropdown-item" href="#">Our Partners</a>
-                                        <a class="dropdown-item" href="#">Career</a>
-
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        SUSTAINABLE TECHNOLOGIES
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Innovation</a>
-                                        <a class="dropdown-item" href="#">The smart burners</a>
-                                        <a class="dropdown-item" href="#">LNAPL Skimming</a>
-                                        <a class="dropdown-item" href="#">Contaminants</a>
-
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        SCALABLE APPLICATION
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Oil and gas</a>
-                                        <a class="dropdown-item" href="#">Urban sites</a>
-                                        <a class="dropdown-item" href="#">Remote location</a>
-
-                                    </div>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link font-weight-medium" href="http://localhost:8015/blog">REMEDIATED SITES</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        NEWS
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">News</a>
-                                        <a class="dropdown-item" href="#">Events</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link font-weight-medium" href="http://localhost:8015/blog">FAQ</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link font-weight-medium" href="http://localhost:8015/blog">BLOG</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link font-weight-medium" href="#">CONTACT US</a>
-                                </li>
+                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                    <t t-call="website.submenu">
+                                        <t t-set="item_class" t-valuef="nav-item"/>
+                                        <t t-set="link_class" t-valuef="nav-link"/>
+                                    </t>
+                                </t>
                             </ul>
 
                         </div>
