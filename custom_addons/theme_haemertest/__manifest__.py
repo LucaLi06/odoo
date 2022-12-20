@@ -8,6 +8,8 @@
     'data': [
         'views/header.xml',
         'views/footer.xml',
+        'views/snippets/home-snippet.xml',
+        'views/snippets/snippets.xml',
     ],
     'assets':{
             'web.assets_frontend': [

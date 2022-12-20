@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="home_snippet" name="home snippet">
+        <section class="home-snippet border-none company-visible">
+            <div class="container mx-auto">
+               <div class="row pb-5">
+                    <div class="col text-center">
+                        <div class="home-img-container rounded-corner">
+                            <img class="img-thumbnail" src="/theme_haemertest/static/src/img/ino.png"/>
+                        </div>
+
+                    </div>
+                    <div class="col text-center">
+                        <div class="home-img-container rounded-corner ">
+                            <img class="img-thumbnail" src="/theme_haemertest/static/src/img/ref.png"/>
+                        </div>
+
+                    </div>
+                    <div class="col text-center">
+                        <div class="home-img-container rounded-corner ">
+                            <img class="img-thumbnail" src="/theme_haemertest/static/src/img/scalable.png"/>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="home-img-container rounded-corner ">
+                            <img class="img-thumbnail" src="/theme_haemertest/static/src/img/tech.png"/>
+                        </div>
+
+                    </div>
+
+               </div>
+            </div>
+
+        </section>
+    </template>
+</odoo>
