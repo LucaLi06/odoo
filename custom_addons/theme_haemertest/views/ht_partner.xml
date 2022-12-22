@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <!-- Partner form view -->
+        <record id="ht_partner_form_view" model="ir.ui.view">
+            <field name="name">haemer.partner.form.view</field>
+            <field name="model">haemer.partner</field>
+            <field name="arch" type="xml">
+                <form string="Partner">
+                    <sheet>
+                        <field name="image" widget="image" class="oe_avatar"/>
+                        <group>
+                            <field name="name"/>
+                            <field name="url"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Partner list or tree view -->
+        <record id="ht_partner_tree_view" model="ir.ui.view">
+            <field name="name">haemer.partner.tree.view</field>
+            <field name="model">haemer.partner</field>
+            <field name="arch" type="xml">
+                <tree string="Partner">
+                    <field name="name"/>
+                    <field name="url"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Partner Action for  submenu -->
+        <record id="ht_partner_action" model="ir.actions.act_window">
+            <field name="name">Partner</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">haemer.partner</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                No Partner yet!
+              </p><p>
+                Please add a new partner!
+              </p>
+            </field>
+        </record>
+
+        <!-- Haemer Root Menu -->
+        <menuitem id="ht_root_menu"
+        name="Haemer"
+        sequence="86"
+        parent="website.menu_website_configuration"/>
+
+        <!-- Partner Submenu -->
+        <menuitem id="ht_partner_menu"
+        name="Partner"
+        sequence="1"
+        parent="ht_root_menu"
+        action="theme_haemertest.ht_partner_action"/>
+    </data>
+</odoo>

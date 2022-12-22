@@ -10,6 +10,9 @@
         'views/footer.xml',
         'views/snippets/home-snippet.xml',
         'views/snippets/snippets.xml',
+        'views/ht_partner.xml',
+        'security/ir.model.access.csv',
+
     ],
     'assets':{
             'web.assets_frontend': [
