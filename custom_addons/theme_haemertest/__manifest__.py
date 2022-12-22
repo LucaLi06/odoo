@@ -12,6 +12,7 @@
         'views/snippets/snippets.xml',
         'views/ht_partner.xml',
         'security/ir.model.access.csv',
+        'views/snippets/display-partner.xml',
 
     ],
     'assets':{

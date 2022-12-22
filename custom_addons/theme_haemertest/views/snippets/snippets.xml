@@ -8,6 +8,9 @@
                     <t t-snippet="theme_haemertest.home_snippet" t-thumbnail="/theme_haemertest/static/src/img/ino.png">
                         <keywords>tech, innovation, scalable app, references</keywords>
                     </t>
+                    <t t-snippet="theme_haemertest.display_partner" t-thumbnail="/theme_haemertest/static/src/img/partner.png">
+                    <keywords>partner</keywords>
+                </t>
                 </div>
             </div>
         </xpath>
