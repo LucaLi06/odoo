@@ -17,7 +17,8 @@
     ],
     'assets':{
             'web.assets_frontend': [
-                'theme_haemertest/static/src/scss/styles.scss'
+                'theme_haemertest/static/src/scss/styles.scss',
+                'theme_haemertest/static/src/js/display-partner.js'
             ],
             'web._assets_primary_variables': [
                 "theme_haemertest/static/src/scss/primary_variables.scss",

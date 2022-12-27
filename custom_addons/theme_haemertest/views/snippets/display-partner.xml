@@ -8,17 +8,17 @@
                     <h2 class="h1">They trust us</h2>
                 </div>
 
-                <!-- element to store list of cities using JS -->
+                <!-- element to store list of partners using JS -->
                 <div class="row justify-content-center" id="ht-partner-row"/>
             </div>
         </section>
     </template>
 
-    <!-- To be used in JS for snippet options -->
+    <!-- To be used in JS for snippet options
     <template id="display_partner_options" inherit_id="website.snippet_options">
         <xpath expr="//div[@data-js='Box']" position="before">
             <div data-js="  DisplayPartnerOptions" data-selector=".display-partner" data-drop-in=".o_mega_menu nav">
             </div>
         </xpath>
-    </template>
+    </template>-->
 </odoo>
