@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="menu_estimate_form" model="website.menu">
+        <field name="name">create estimate</field>
+        <field name="url">/estimate_webform</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence">75</field>
+    </record>
+    <template id="create_estimate" name="Create Estimate">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="oe_structure">
+                    <div class="container">
+                        <form role="form" action="/create/estimate" method="post">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <div class="form-group">
+                                <label for="enterprise" class="control-label">enterprise</label>
+                                <input type="text" name="enterprise" t-att-value="enterprise" id="enterprise"
+                                       class="form-control" placeholder="enterprise" required ="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="name" class="control-label">name</label>
+                                <input type="text" name="name" t-att-value="name" id="name"
+                                       class="form-control" placeholder="name" required ="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="address" class="control-label">address</label>
+                                <input type="text" name="address" t-att-value="address" id="address"
+                                       class="form-control" placeholder="address" required ="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="latitude" class="control-label">latitude</label>
+                                <input type="number"  step ="any" name="latitude" t-att-value="latitude" id="latitude"
+                                       class="form-control" placeholder="0" required ="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="longitude" class="control-label">longitude</label>
+                                <input type="number"  step ="any" name="longitude" t-att-value="longitude" id="longitude"
+                                       class="form-control" placeholder="0" required ="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="past_activity" class="control-label">past activity</label>
+                                <input type="text" name="past_activity" t-att-value="past_activity" id="past_activity"
+                                       class="form-control" placeholder="past activity" required ="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="future_activity" class="control-label">future activity</label>
+                                <input type="text" name="future_activity" t-att-value="future_activity" id="future_activity"
+                                       class="form-control" placeholder="future activity" required ="required"/>
+                            </div>
+                            <div class="form-group">
+
+
+                                <!-- he i want to have the radio box for remediation_type -->
+                                <select class="form-control" name="remediation_type">
+                                    <option t-attf-value="soil">soil</option>
+                                    <option t-attf-value="choice2">choice2</option>
+                                    <option t-attf-value="choice3">choice3</option>
+                                </select>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="volume" class="control-label">Volume(m³)</label>
+                                <input type="number"  step ="any" name="volume" t-att-value="volume" id="volume"
+                                       class="form-control" placeholder="0" required ="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="density" class="control-label">Density(kg/m³)</label>
+                                <input type="number"  step ="any" name="density" t-att-value="density" id="density"
+                                       class="form-control" placeholder="0" required ="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="humidity" class="control-label">humidity</label>
+                                <input type="number"  step ="any" name="humidity" t-att-value="humidity" id="humidity"
+                                       class="form-control" placeholder="0" required ="required"
+                                       min="0" max="1"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="porosity" class="control-label">porosity</label>
+                                <input type="number"  step ="any" name="porosity" t-att-value="porosity" id="porosity"
+                                       class="form-control" placeholder="0" required ="required"
+                                       min="0" max="1"/>
+                            </div>
+                            <div class="clearfix oe_login_buttons">
+                                <button type="submit" class="btn btn-primary pull-left">click</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </t>
+    </template>
+</odoo>

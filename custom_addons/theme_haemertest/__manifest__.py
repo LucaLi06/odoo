@@ -13,12 +13,15 @@
         'views/ht_partner.xml',
         'security/ir.model.access.csv',
         'views/snippets/display-partner.xml',
+        'views/website_form.xml',
+        'views/estimate_form.xml',
 
     ],
     'assets':{
             'web.assets_frontend': [
                 'theme_haemertest/static/src/scss/styles.scss',
-                'theme_haemertest/static/src/js/display-partner.js'
+                'theme_haemertest/static/src/js/display-partner.js',
+
             ],
             'web._assets_primary_variables': [
                 "theme_haemertest/static/src/scss/primary_variables.scss",

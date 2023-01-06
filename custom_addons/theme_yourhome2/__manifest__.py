@@ -11,13 +11,12 @@
         'views/footer.xml',
         'views/homepage.xml',
         'views/services_page.xml',
-        'views/menus.xml',
         'views/snippets/property-agents.xml',
         'views/snippets/new-properties.xml',
-        'views/snippets/rent_mega_menu.xml',
         'views/snippets/explore-cities.xml',
         'views/snippets/snippets.xml',
         'views/yh_cities.xml',
+        'views/website_test.xml',
     ],
     'assets':{
         'web.assets_frontend': [

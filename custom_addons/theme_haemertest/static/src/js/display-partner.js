@@ -6,9 +6,8 @@ publicWidget.registry.HtPartner = publicWidget.Widget.extend({
     selector: '.display-partner',
     start() {
         let partnersRow = this.el.querySelector('#ht-partner-row')
-
+        console.log("ici")
         if (partnersRow){
-            console.log("coucou")
             this._rpc({
                 route: '/partners/',
                 params:{}

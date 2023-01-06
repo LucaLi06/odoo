@@ -6,7 +6,7 @@
                 <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
                     <div class="container">
                         <a class="navbar-brand" href="#">
-                            <img style="height:50px; widht:auto;" src="/theme_yourhome2/static/src/img/1239292.png"/>
+                            <img style="height:50px; widht:auto;" src="/theme_yourhome/static/src/img/logo.png"/>
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -22,22 +22,40 @@
                                         <t t-set="link_class" t-valuef="nav-link font-weight-medium"/>
                                     </t>
                                 </t>
-
                             </ul>
                             <div class="d-block d-lg-none">
                                 <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item">
-                                        <a class="nav-link font-weight-medium" href="#">Sign In</a>
-                                    </li>
+                                    <!-- Sign In -->
+                                    <t t-call="portal.placeholder_user_sign_in">
+                                        <t t-set="_item_class" t-valuef="nav-item ml-lg-auto"/>
+                                        <t t-set="_link_class" t-valuef="nav-link font-weight-bold"/>
+                                    </t>
+                                    <!-- User Dropdown -->
+                                    <t t-call="portal.user_dropdown">
+                                        <t t-set="_user_name" t-value="true"/>
+                                        <t t-set="_item_class" t-valuef="nav-item dropdown ml-lg-auto"/>
+                                        <t t-set="_link_class" t-valuef="nav-link font-weight-bold"/>
+                                    </t>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="d-none d-lg-block">
-
+                            <ul class="navbar-nav mr-auto">
+                                <!-- Sign In -->
+                                <t t-call="portal.placeholder_user_sign_in">
+                                    <t t-set="_item_class" t-valuef="nav-item ml-lg-auto"/>
+                                    <t t-set="_link_class" t-valuef="nav-link font-weight-bold"/>
+                                </t>
+                                <!-- User Dropdown -->
+                                <t t-call="portal.user_dropdown">
+                                    <t t-set="_user_name" t-value="true"/>
+                                    <t t-set="_item_class" t-valuef="nav-item dropdown ml-lg-auto"/>
+                                    <t t-set="_link_class" t-valuef="nav-link font-weight-bold"/>
+                                </t>
+                            </ul>
                         </div>
                     </div>
-
                 </nav>
             </header>
         </xpath>
