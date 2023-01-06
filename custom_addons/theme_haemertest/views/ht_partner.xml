@@ -57,5 +57,6 @@
         sequence="1"
         parent="ht_root_menu"
         action="theme_haemertest.ht_partner_action"/>
+
     </data>
 </odoo>

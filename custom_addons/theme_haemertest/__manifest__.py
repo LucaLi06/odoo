@@ -15,6 +15,8 @@
         'views/snippets/display-partner.xml',
         'views/website_form.xml',
         'views/estimate_form.xml',
+        'views/thx_estimate.xml',
+        'views/ht_estimate.xml',
 
     ],
     'assets':{

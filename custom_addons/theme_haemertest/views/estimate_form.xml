@@ -49,14 +49,14 @@
                                        class="form-control" placeholder="future activity" required ="required"/>
                             </div>
                             <div class="form-group">
-
-
-                                <!-- he i want to have the radio box for remediation_type -->
+                                <label for="remediation_type" class="control-label">remediation type</label>
                                 <select class="form-control" name="remediation_type">
-                                    <option t-attf-value="soil">soil</option>
-                                    <option t-attf-value="choice2">choice2</option>
-                                    <option t-attf-value="choice3">choice3</option>
+                                    <t t-foreach="selection" t-as="s">
+                                        <option t-attf-value="#{s}"><t t-esc="s"/></option>
+                                    </t>
                                 </select>
+                                <!-- he i want to have the radio box for remediation_type -->
+
 
                             </div>
                             <div class="form-group">
@@ -91,4 +91,5 @@
             </div>
         </t>
     </template>
+
 </odoo>

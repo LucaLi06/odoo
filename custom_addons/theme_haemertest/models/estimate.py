@@ -15,7 +15,7 @@ class HaemertestEstimate (models.Model):
         ('soil', 'soils'),
         ('choice2', 'choices2'),
         ('choice3', 'choices3'),
-    ], required=True, default='soil', tracking=True)
+    ], required=True, default='soil')
     volume = fields.Integer(string='Volume')
     density = fields.Integer(string='Density')
     humidity = fields.Float(string='Humidity')

@@ -7,7 +7,8 @@ class Estimate(http.Controller):
 
     @http.route('/estimate_webform/', type="http",auth="public",website="true")
     def patient_webform(self,**kw):
-        return http.request.render('theme_haemertest.create_estimate',{})
+        selection = ["soil","choice2","choice3"]
+        return http.request.render('theme_haemertest.create_estimate',{'selection':selection})
 
     @http.route('/create/estimate/', type="http",auth="public",website="true")
     def create_estimate(self, **kw):
@@ -29,4 +30,4 @@ class Estimate(http.Controller):
         })
         print("-------",kw)
 
-        return request.render("theme_haemertest.create_estimate", {'selection': selection})
+        return request.render("theme_haemertest.thx_estimate", {})

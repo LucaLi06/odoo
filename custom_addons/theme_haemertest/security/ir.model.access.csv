@@ -1,3 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_partner,yh_cities,model_haemer_partner,,1,1,1,1
 access_patient,yh_patient,model_haemer_patient,,1,1,1,1
+access_estimate,yh_estimate,model_haemer_estimate,,1,1,1,1
